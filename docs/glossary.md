@@ -1,54 +1,132 @@
 # Glossary
 
-## Applied Natural Language Processing (NLP)
+This module focuses on preparing raw text
+for natural language processing and analysis.
 
-Applied Natural Language Processing (NLP) uses **computational techniques** to **analyze and work with human language**.
-Common tasks include:
+## Quick Lookup
 
-- extracting information from text
-- classifying documents
-- identifying topics or sentiment
-- summarizing or transforming text
+Common terms used in this module:
 
-## Web Mining
+- **Text Preprocessing** - preparing text for analysis.
+- **Tokenization** - dividing text into smaller units.
+- **Token** - a unit produced by a tokenizer.
+- **Normalization** - converting text to a consistent representation.
+- **Stopword** - a word commonly filtered in some NLP tasks.
+- **Text Cleaning** - identifying and handling unwanted text content.
+- **Token Frequency** - the number of occurrences of a token.
 
-Web mining is the practice of collecting and analyzing data from the web.
+## Text Preprocessing
 
-Typical activities include:
+**Text preprocessing** is the process of preparing
+raw text for computational analysis.
 
-- retrieving web pages or APIs
-- extracting structured information from HTML
-- analyzing links, text, or metadata
-- building datasets for further analysis
+Preprocessing may include tokenization,
+normalization, cleaning, and filtering.
 
-## Project
+The appropriate operations depend on
+the analytical task and the methods being used.
 
-A structured set of files and folders that work together to run code, store data, and produce outputs.
+## Tokenization
 
-## Repository (repo)
+**Tokenization** divides text into smaller units
+called tokens.
 
-A version-controlled project folder (often hosted on GitHub) that tracks changes over time.
+Depending on the tokenizer, tokens may represent
+words, subwords, characters, or punctuation.
 
-## Working Directory
+Tokenization is a foundational operation
+in both traditional NLP and modern language models.
 
-The folder your terminal is currently operating in.
+## Token
 
-## Path
+A **token** is a unit of text
+produced by a tokenization process.
 
-An address to a file or folder (example: `data/input.csv`).
+Token boundaries depend on the tokenizer.
 
-## Dataset
+The same text may produce different token sequences
+when processed by different tokenizers.
 
-A collection of data records used by a program.
+## Normalization
 
-## Artifact
+**Normalization** converts text into a more consistent representation.
 
-A file produced by the program (for example results or reports).
+Common operations include:
 
-## Logging
+- Converting uppercase letters to lowercase.
+- Standardizing whitespace.
+- Applying Unicode normalization.
+- Standardizing selected textual conventions.
 
-Messages written by the program that record what it is doing.
+Normalization may reduce unwanted variation,
+but it can also remove useful distinctions.
 
-## README.md
+## Text Cleaning
 
-The front-page document that explains what a project is and how to run it.
+**Text cleaning** identifies and handles
+unwanted or irrelevant content.
+
+Cleaning may involve removing formatting artifacts,
+handling punctuation, correcting encoding problems,
+or filtering selected tokens.
+
+What constitutes noise depends on the task.
+
+## Stopword
+
+A **stopword** is a commonly occurring word
+that may be excluded from some forms of text analysis.
+
+Stopwords are often grammatical words
+such as articles, prepositions, and conjunctions.
+
+Stopword removal can simplify frequency analysis,
+but some common words carry important meaning.
+
+For example, negation words may be essential
+for sentiment analysis or interpretation.
+
+## Stopword Removal
+
+**Stopword removal** is the process
+of excluding tokens identified as stopwords.
+
+It is a task-dependent preprocessing decision,
+not a universal requirement for NLP.
+
+Modern language models generally use token sequences
+without traditional stopword removal.
+
+## Whitespace
+
+**Whitespace** consists of characters
+that separate textual content,
+including spaces, tabs, and line breaks.
+
+Whitespace may be normalized
+or used to identify token boundaries.
+
+## Token Frequency
+
+**Token frequency** is the number of times
+a token occurs within a document or corpus.
+
+Frequency counts help describe vocabulary usage
+and identify common terms.
+
+## Preprocessing Tradeoff
+
+A **preprocessing tradeoff** occurs when
+an operation reduces unwanted variation
+but also risks removing useful information.
+
+For example, lowercasing removes case differences
+but may also remove distinctions between proper names
+and ordinary words.
+
+Preprocessing decisions should be evaluated
+against the requirements of the analysis.
+
+---
+
+[◄ Back to 🏠 Home](index.md)
