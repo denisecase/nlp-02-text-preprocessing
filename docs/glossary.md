@@ -47,6 +47,18 @@ Token boundaries depend on the tokenizer.
 The same text may produce different token sequences
 when processed by different tokenizers.
 
+## Minimum Token Length
+
+A **minimum token length** filter excludes tokens
+shorter than a chosen number of characters.
+
+It can remove fragments and noise,
+but it also removes short meaningful words
+such as "no" or "AI".
+
+The threshold is a preprocessing decision
+that should be tested, not assumed.
+
 ## Normalization
 
 **Normalization** converts text into a more consistent representation.
