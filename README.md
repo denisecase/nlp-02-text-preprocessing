@@ -81,7 +81,7 @@ From a VS Code terminal in the project root:
 uv run python -m nlp.text_preprocessing
 ```
 
-Close each visualization window after viewing
+**Close each visualization window** after viewing
 so the script can continue executing.
 
 The Jupyter notebook provides an additional
@@ -122,7 +122,7 @@ and the logging system works.
 Run the automated tests:
 
 ```shell
-uv run pytest
+uv run python -m pytest
 ```
 
 ## Project Documentation
